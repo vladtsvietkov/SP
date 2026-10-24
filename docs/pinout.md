@@ -12,12 +12,12 @@
 | PA6 | GPIO input/OD | D12 | DHT DATA | 3.3 В, зовнішні 5.1к, MCU pull-up як резерв у моделі | не займає I²C/SWD, програмний протокол |
 | PB8 | AF6 I²C1 SCL | D15/SCL | BMP SCL | OD 3.3 В, зовнішні 4.7к | штатний SCL плати |
 | PB9 | AF6 I²C1 SDA | D14/SDA | BMP SDA | OD 3.3 В, зовнішні 4.7к | штатний SDA, адреса 0x77 |
-| PA2/PA3 | AF1 USART2 TX/RX | D1/D0 | serial monitor | 3.3 В, no pull | VCP стартового шаблону |
+| PA2/PA3 | AF1 USART2 TX/RX | ST morpho PA2/PA3, VCP | serial monitor | 3.3 В, no pull | VCP через SB27/SB32; Arduino D1/D0 — PB6/PB7 |
 | PA5 | GPIO output | D13 | LED LD4 | бортова обв'язка | збережено LED |
 | PA1 | GPIO output | A1 | ADC marker | 3.3 В, no pull | ADC не використовує канал1 |
 | PA4 | GPIO output | A2 | work marker | 3.3 В, no pull | незалежний від SD CS |
-| PB3/4/5 | AF0 SPI1 SCK/MISO/MOSI | D3/D5/D4 | SD SCK/DO/DI | 3.3 В, CS high при старті | не конфліктує з PA5 LED/PA6 DHT |
-| PB0 | GPIO output | A3 | SD CS | 3.3 В, 10к до3.3 В на фізичному стенді | керування CS на весь command/data |
+| PB3/4/5 | AF0 SPI1 SCK/MISO/MOSI | D3/D5/D6 | SD SCK/DO/DI | 3.3 В, CS high при старті | не конфліктує з PA5 LED/PA6 DHT |
+| PB0 | GPIO output | D10 | SD CS | 3.3 В, 10к до3.3 В на фізичному стенді | керування CS на весь command/data; model alias PB0.1 |
 
 BMP180 ID D0=0x55, адреса 0x77 фіксована. DHT і NTC не мають chip ID;
 їх self-test — checksum/range та правдоподібний ADC. SD: CMD8 echo=0x1AA,
@@ -34,6 +34,10 @@ SWD PA13/PA14, кварцові PF0/PF1 і PC14/PC15, кнопка PC13 зали
 Відхилено SPI PA5/PA6/PA7: спільні PA5 LED і PA6 DHT.
 Відхилено I²C PB6/PB7: штатні PB8/PB9 вже налаштовані й доступні на SCL/SDA.
 Відхилено probes PC0/PC1: їх немає у C031C6 LQFP48.
+
+Пізніша ізольована перевірка C031 у ЛР2 показала OUTPUT_OD+ODR1 → IDR0,
+а INPUT_PULLUP → IDR1. Тому адресний ACK апаратного bring-up ЛР1 не доводить
+готовності BMP180; доведені реальні такти SCL. Повний обмін сенсорів належить ЛР2.
 
 Живлення і струми: [hardware-components.md](hardware-components.md).
 В моделі pull-up можуть бути ідеалізовані; на фізичній платі перевірити
