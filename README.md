@@ -12,6 +12,7 @@ HAL init, UART 115200 8N1, LED і I²C probe перевірено у Wokwi.
 
 ## Збірка і запуск
 ```sh
+cd "/Users/pliffdax/Projects/university/Study/People/Цвєтков Владислав Олександрович/2026-Fall/SP/Lab01/Work/SP-Labs"
 make build IMAGE=dewwindow-build:lab1
 make clean
 ```

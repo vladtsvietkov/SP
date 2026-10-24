@@ -67,6 +67,10 @@ DHT DATA PA6 — GPIO. SPI1 PB3/PB4/PB5 AF0 і CS PB0 зарезервовано
 SWD, VCP, LED і кварцові лінії не використовуються як чужі сигнали.
 
 [PAGE]
+![Pinout з власного збереженого .ioc ЛР1 у STM32CubeMX: STM32C031C6Tx, GPIO, USART2 та вибрані сигнали ADC/I²C/SPI. Ініціалізація ADC/SPI/TIM3 виконується власним Platform/board.c.](docs/screenshots/lab1/cubemx-pinout.png)
+
+![Фрагмент Clock Configuration того самого .ioc: HSI48, ділення1 і SYSCLK48 МГц. Це конфігурація, а фактичні сигнали перевірено окремим VCD.](docs/screenshots/lab1/cubemx-clock.png)
+
 ## Дослідження компонентів
 | Компонент | Вибір і документ |
 |---|---|
