@@ -1,0 +1,11 @@
+{
+  "actual_utc": "2026-11-06T16:03:05.824804+00:00",
+  "source_commit": "78281084f49dad12a8dd5a671c613831b96e62d3",
+  "method": "Docker ARM build, Wokwi 4.1.0 Community, GPIO VCD, sigrok-cli",
+  "hashes": {
+    "docs/captures/lab1/bringup.vcd": "bc238a6acce377a2dc8044c21a18aa91d4e93a0d291ec9adc0546fc4565b9d98",
+    "docs/firmware/lab1/firmware.elf": "bf8c7f182fc8a66f1e4a64c00fd9cf8257751c31e62e2cc8b1b0da38c8fefc8c",
+    "docs/firmware/lab1/firmware.hex": "b21af474ad225baadca23a8756c3a848072655e5e5830f6f73e17c83fabd31fa",
+    "docs/firmware/lab1/firmware.bin": "76fd0551f6c6057ab9721dab34ecfe6afeb60cfccd03c1f9a7a6a0e065f8fa48"
+  }
+}

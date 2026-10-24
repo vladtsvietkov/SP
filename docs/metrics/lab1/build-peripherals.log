@@ -1,0 +1,50 @@
+docker build -t dewwindow-build:lab1 docker
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 331B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu:24.04
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#4 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#4 DONE 0.0s
+
+#5 [2/3] RUN apt-get update && apt-get install -y --no-install-recommends     make     gcc-arm-none-eabi     binutils-arm-none-eabi     libnewlib-arm-none-eabi     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 [3/3] WORKDIR /workspace
+#6 CACHED
+
+#7 exporting to image
+#7 exporting layers done
+#7 exporting manifest sha256:5d55519566f42c5327d27275540b040a9f9edcf287f3bfbd0d43257da1b001ff done
+#7 exporting config sha256:cd499726b99492d1070e7bd430d3a22de5ce2e608113bea2b7d193ef4fc77742 done
+#7 exporting attestation manifest sha256:9ef657a4d13cd0460628b94676fb946839afd7c129dda72a6b7d26991be73781 done
+#7 exporting manifest list sha256:cf7a49e8d15e7f317ba79e449bb046732b087184ee73c9232121548454882ea2 done
+#7 naming to docker.io/library/dewwindow-build:lab1 done
+#7 unpacking to docker.io/library/dewwindow-build:lab1 done
+#7 DONE 0.0s
+docker run --rm -v "/Users/pliffdax/Projects/university/Study/People/Цвєтков Владислав Олександрович/2026-Fall/SP/Lab01/Work/SP-Labs:/workspace" -w /workspace \
+		--user "501:20" dewwindow-build:lab1 \
+		make -C firmware all
+make: Entering directory '/workspace/firmware'
+arm-none-eabi-gcc -c -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/board.d" -Wa,-a,-ad,-alms=build/board.lst Platform/board.c -o build/board.o
+In file included from Core/Inc/stm32c0xx_hal_conf.h:233,
+                 from Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:30,
+                 from Core/Inc/main.h:30,
+                 from Platform/board.h:3,
+                 from Platform/board.c:1:
+Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h:762:10: fatal error: stm32c0xx_hal_spi_ex.h: No such file or directory
+  762 | #include "stm32c0xx_hal_spi_ex.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: Leaving directory '/workspace/firmware'
+make: *** [Makefile:169: build/board.o] Error 1
+make: *** [build] Error 2
