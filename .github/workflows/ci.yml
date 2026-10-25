@@ -1,0 +1,12 @@
+name: DewWindow build and tests
+on:
+  push:
+    branches: [lab1, lab2]
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - run: make build IMAGE=dewwindow-ci
+      - run: make coverage HOST_CC=gcc
