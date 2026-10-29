@@ -2,5 +2,11 @@
 version = 1
 firmware = 'firmware/build/firmware.hex'
 elf = 'firmware/build/firmware.elf'
-vcdFile = 'docs/captures/lab1/bringup.vcd'
+vcdFile = 'docs/captures/lab2/bringup.vcd'
 rfc2217ServerPort = 4417
+
+[[sdcard]]
+part = 'storage'
+image = 'media/dew-demo.img'
+size = '4M'
+writeback = true

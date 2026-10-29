@@ -22,7 +22,7 @@ TARGET = firmware
 # debug build?
 DEBUG = 1
 # optimization
-OPT = -Og
+OPT = -Os
 
 
 #######################################
@@ -36,6 +36,11 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Platform/bringup.c \
+Platform/gpio_i2c.c \
+Devices/sensors.c \
+Devices/sd.c \
+App/dew.c \
 Platform/board.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c \
@@ -57,8 +62,6 @@ Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c \
-Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c \
-Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c \
 Core/Src/system_stm32c0xx.c  
@@ -119,6 +122,8 @@ AS_INCLUDES =
 # C includes
 C_INCLUDES =  \
 -IPlatform \
+-IDevices \
+-IApp \
 -ICore/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy \
@@ -129,7 +134,7 @@ C_INCLUDES =  \
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
-CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -Wextra -fdata-sections -ffunction-sections
 
 ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
@@ -138,6 +143,9 @@ endif
 
 # Generate dependency information
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
+
+# ST v1.0.1 retains parameters unused on this device variant.
+$(BUILD_DIR)/stm32c0xx_hal_flash_ex.o $(BUILD_DIR)/stm32c0xx_hal_pwr.o: CFLAGS += -Wno-unused-parameter
 
 
 #######################################

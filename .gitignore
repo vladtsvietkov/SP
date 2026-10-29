@@ -2,3 +2,7 @@
 firmware/build/
 wokwi.vcd
 *.swp
+build-tests/
+*.gcov
+__pycache__/
+media/dew-demo.img

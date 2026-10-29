@@ -38,7 +38,8 @@ extern "C" {
 #define HAL_ADC_MODULE_ENABLED
 /* #define HAL_CRC_MODULE_ENABLED   */
 /* #define HAL_CRYP_MODULE_ENABLED   */
-#define HAL_I2C_MODULE_ENABLED
+/* I2C wire protocol uses bounded HAL GPIO direction switching in Wokwi. */
+/* #define HAL_I2C_MODULE_ENABLED */
 /* #define HAL_I2S_MODULE_ENABLED   */
 /* #define HAL_IWDG_MODULE_ENABLED   */
 /* #define HAL_IRDA_MODULE_ENABLED   */

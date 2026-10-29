@@ -10,33 +10,279 @@
       "left": 0,
       "attrs": {}
     },
-    {"type":"board-bmp180","id":"baro","top":-130,"left":240,"attrs":{"temperature":"24","pressure":"101325"}},
-    {"type":"wokwi-dht22","id":"air","top":90,"left":260,"attrs":{"temperature":"24","humidity":"60"}},
-    {"type":"wokwi-ntc-temperature-sensor","id":"surface","top":260,"left":220,"attrs":{"temperature":"24","beta":"3950"}},
-    {"type":"wokwi-logic-analyzer","id":"logic","top":-100,"left":-250,"attrs":{"bufferSize":"2000000"}}
+    {
+      "type": "board-bmp180",
+      "id": "baro",
+      "top": -130,
+      "left": 240,
+      "attrs": {
+        "temperature": "24",
+        "pressure": "101325"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "air",
+      "top": 90,
+      "left": 260,
+      "attrs": {
+        "temperature": "24",
+        "humidity": "60"
+      }
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "surface",
+      "top": 260,
+      "left": 220,
+      "attrs": {
+        "temperature": "24",
+        "beta": "3950"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": -100,
+      "left": -250,
+      "attrs": {
+        "bufferSize": "2000000"
+      }
+    },
+    {
+      "type": "wokwi-microsd-card",
+      "id": "storage",
+      "top": 420,
+      "left": 220,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "dhtPull",
+      "top": 40,
+      "left": 350,
+      "attrs": {
+        "value": "5100"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "sclPull",
+      "top": -40,
+      "left": 360,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "sdaPull",
+      "top": -10,
+      "left": 430,
+      "attrs": {
+        "value": "4700"
+      }
+    }
   ],
   "connections": [
-    ["$serialMonitor:TX", "nucleo:PA3", "", []],
-    ["$serialMonitor:RX", "nucleo:PA2", "", []],
-    ["baro:SCL","nucleo:PB8","green",[]],
-    ["baro:SDA","nucleo:PB9","blue",[]],
-    ["baro:VCC","nucleo:3V3","red",[]],
-    ["baro:GND","nucleo:GND.1","black",[]],
-    ["air:VCC","nucleo:3V3","red",[]],
-    ["air:GND","nucleo:GND.1","black",[]],
-    ["air:SDA","nucleo:PA6","green",[]],
-    ["surface:VCC","nucleo:3V3","red",[]],
-    ["surface:GND","nucleo:GND.1","black",[]],
-    ["surface:OUT","nucleo:PA0","orange",[]],
-    ["logic:D0","nucleo:PB8","green",[]],
-    ["logic:D1","nucleo:PB9","blue",[]],
-    ["logic:D2","nucleo:PA2","purple",[]],
-    ["logic:D3","nucleo:PA6","yellow",[]],
-    ["logic:D4","nucleo:PA1","orange",[]],
-    ["logic:D5","nucleo:PA5","gray",[]],
-    ["logic:D6","nucleo:PA4","gray",[]],
-    ["logic:D7","nucleo:PB3","gray",[]],
-    ["logic:GND","nucleo:GND.1","black",[]]
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "baro:SCL",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "baro:SDA",
+      "nucleo:PB9",
+      "blue",
+      []
+    ],
+    [
+      "baro:VCC",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "baro:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "air:VCC",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "air:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "air:SDA",
+      "nucleo:PA6",
+      "green",
+      []
+    ],
+    [
+      "surface:VCC",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "surface:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "surface:OUT",
+      "nucleo:PA0",
+      "orange",
+      []
+    ],
+    [
+      "logic:D0",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "logic:D1",
+      "nucleo:PB9",
+      "blue",
+      []
+    ],
+    [
+      "logic:D2",
+      "nucleo:PA2",
+      "purple",
+      []
+    ],
+    [
+      "logic:D3",
+      "nucleo:PA6",
+      "yellow",
+      []
+    ],
+    [
+      "logic:D4",
+      "nucleo:PA1",
+      "orange",
+      []
+    ],
+    [
+      "logic:D5",
+      "nucleo:PA5",
+      "gray",
+      []
+    ],
+    [
+      "logic:D6",
+      "nucleo:PA4",
+      "gray",
+      []
+    ],
+    [
+      "logic:D7",
+      "nucleo:PB3",
+      "gray",
+      []
+    ],
+    [
+      "logic:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "storage:SCK",
+      "nucleo:PB3",
+      "orange",
+      []
+    ],
+    [
+      "storage:DO",
+      "nucleo:PB4",
+      "green",
+      []
+    ],
+    [
+      "storage:DI",
+      "nucleo:PB5",
+      "blue",
+      []
+    ],
+    [
+      "storage:CS",
+      "nucleo:PB0.1",
+      "purple",
+      []
+    ],
+    [
+      "storage:VCC",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "storage:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "dhtPull:1",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "dhtPull:2",
+      "air:SDA",
+      "green",
+      []
+    ],
+    [
+      "sclPull:1",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "sclPull:2",
+      "baro:SCL",
+      "green",
+      []
+    ],
+    [
+      "sdaPull:1",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "sdaPull:2",
+      "baro:SDA",
+      "blue",
+      []
+    ]
   ],
   "dependencies": {}
 }
