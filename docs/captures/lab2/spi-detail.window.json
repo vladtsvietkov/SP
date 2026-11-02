@@ -1,0 +1,14 @@
+{
+  "source": "docs/captures/lab2/spi-startup-500ms.vcd",
+  "source_sha256": "48fe765e0ea1c1883312a40730f132a7a57a0c497186269975690b05d2b59df5",
+  "output_sha256": "5de9b43dffc70165e753b65dbd7e395e64ffe13374cde4d676cc9cf38a4e82e6",
+  "origin_ms": 157.0,
+  "duration_ms": 60.0,
+  "mapping": {
+    "D0": "CLK",
+    "D1": "MOSI",
+    "D2": "MISO",
+    "D3": "CS#"
+  },
+  "method": "Native scalar edge window; timestamps rebased by origin_ms, initial levels from preceding source events. No synthetic transitions."
+}

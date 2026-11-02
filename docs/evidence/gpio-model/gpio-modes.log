@@ -1,0 +1,15 @@
+PP high scl=1 sda=1 MODER=ebf5fabd PUPDR=24050000 ODR=301 IDR=301
+INPUT PU scl=1 sda=1
+OD high scl=0 sda=0
+PP high scl=1 sda=1 MODER=ebf5fabd PUPDR=24050000 ODR=301 IDR=301
+INPUT PU scl=1 sda=1
+OD high scl=0 sda=0
+PP high scl=1 sda=1 MODER=ebf5fabd PUPDR=24050000 ODR=301 IDR=301
+INPUT PU scl=1 sda=1
+OD high scl=0 sda=0
+PP high scl=1 sda=1 MODER=ebf5fabd PUPDR=24050000 ODR=301 IDR=301
+INPUT PU scl=1 sda=1
+OD high scl=0 sda=0
+PP high scl=1 sda=1 MODER=ebf5fabd PUPDR=24050000 ODR=301 IDR=301
+INPUT PU scl=1 sda=1
+OD high scl=0 sda=0

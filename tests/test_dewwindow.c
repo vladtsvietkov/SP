@@ -5,6 +5,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#include "fixtures/captured.h"
 static const int32_t golden[11]={408,-72,-14383,32741,32757,23153,6190,4,-32768,-8711,2868};
 static unsigned checks;
 #define CHECK(v) do{assert(v);checks++;}while(0)
@@ -24,15 +25,17 @@ static dw_error write_bus(void*ctx,uint8_t a,uint8_t reg,const uint8_t*b,size_t 
 static void delay_bus(void*c,uint32_t t){(void)c;CHECK(t==5);}
 static void test_sensors(void){
  int32_t t,h,p;float n;
- uint8_t d[]={2,88,0,240,74};CHECK(dht_decode(d,&t,&h)==DW_OK&&t==240&&h==600);
+ uint8_t d[5];memcpy(d,captured_dht22,5);CHECK(dht_decode(d,&t,&h)==DW_OK&&t==240&&h==600);
  d[2]=128;d[3]=55;d[4]=(uint8_t)(d[0]+d[1]+d[2]+d[3]);CHECK(dht_decode(d,&t,&h)==DW_OK&&t==-55);
  d[4]++;CHECK(dht_decode(d,&t,&h)==DW_CHECKSUM);
  uint8_t invalid[]={255,255,0,0,254};CHECK(dht_decode(invalid,&t,&h)==DW_RANGE);
  CHECK(ntc_decode(2048,&n)==DW_OK&&fabsf(n-25)<0.02);
+ CHECK(ntc_decode(2093,&n)==DW_OK&&fabsf(n-24)<0.05);
  CHECK(ntc_decode(0,&n)==DW_RANGE);CHECK(ntc_decode(4095,&n)==DW_RANGE);
  CHECK(ntc_decode(1,&n)==DW_RANGE);CHECK(ntc_decode(4094,&n)==DW_RANGE);
  CHECK(ntc_decode(1000,&n)==DW_OK&&n>25);
  CHECK(bmp_compensate(golden,27898,23843,&t,&p)==DW_OK&&t==150&&p==69964);
+ CHECK(bmp_compensate(captured_bmp_cal,captured_bmp_ut,captured_bmp_up,&t,&p)==DW_OK&&t==240&&p==101327);
  int32_t c[11];memcpy(c,golden,sizeof(c));c[4]=0;c[10]=0;CHECK(bmp_compensate(c,27898,23843,&t,&p)==DW_RANGE);
  memcpy(c,golden,sizeof(c));c[3]=0;CHECK(bmp_compensate(c,27898,23843,&t,&p)==DW_RANGE);
  CHECK(bmp_compensate(golden,27898,0,&t,&p)==DW_RANGE);

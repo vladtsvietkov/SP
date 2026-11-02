@@ -1,0 +1,13 @@
+python3 tools/check_layers.py
+DewWindow layer dependency check: PASS
+mkdir -p build-tests
+gcc -std=c11 -Wall -Wextra -Werror --coverage -Ifirmware/Devices -Ifirmware/App firmware/Devices/sensors.c firmware/Devices/sd.c firmware/App/dew.c tests/test_dewwindow.c -lm -o build-tests/test
+tests/test_dewwindow.c: In function 'write_bus':
+tests/test_dewwindow.c:21:2: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+   21 |  if(++f->index==f->fail)return f->error;return DW_OK;
+      |  ^~
+tests/test_dewwindow.c:21:41: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   21 |  if(++f->index==f->fail)return f->error;return DW_OK;
+      |                                         ^~~~~~
+cc1: all warnings being treated as errors
+make: *** [Makefile:27: test] Error 1

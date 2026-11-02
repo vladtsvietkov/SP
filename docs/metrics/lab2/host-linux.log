@@ -1,0 +1,29 @@
+python3 tools/check_layers.py
+DewWindow layer dependency check: PASS
+mkdir -p build-tests
+gcc -std=c11 -Wall -Wextra -Werror --coverage -Ifirmware/Devices -Ifirmware/App firmware/Devices/sensors.c firmware/Devices/sd.c firmware/App/dew.c tests/test_dewwindow.c -lm -o build-tests/test
+In file included from firmware/Devices/sensors.h:3,
+                 from firmware/Devices/sensors.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+In file included from firmware/Devices/sd.h:3,
+                 from firmware/Devices/sd.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+In file included from firmware/App/dew.h:3,
+                 from firmware/App/dew.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+In file included from firmware/Devices/sensors.h:3,
+                 from tests/test_dewwindow.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:27: test] Error 1

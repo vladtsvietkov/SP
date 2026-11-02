@@ -1,0 +1,30 @@
+python3 tools/check_layers.py
+DewWindow layer dependency check: PASS
+mkdir -p build-tests
+gcc -std=c11 -Wall -Wextra -Werror --coverage -Ifirmware/Devices -Ifirmware/App firmware/Devices/sensors.c firmware/Devices/sd.c firmware/App/dew.c tests/test_dewwindow.c -lm -o build-tests/test
+./build-tests/test
+libgcov profiling error:/workspace/build-tests/test-test_dewwindow.gcda:Version mismatch - expected 13.3 (release) (B33*) got 11.1 (release) (B11*)
+libgcov profiling error:/workspace/build-tests/test-dew.gcda:Version mismatch - expected 13.3 (release) (B33*) got 11.1 (release) (B11*)
+libgcov profiling error:/workspace/build-tests/test-sd.gcda:Version mismatch - expected 13.3 (release) (B33*) got 11.1 (release) (B11*)
+libgcov profiling error:/workspace/build-tests/test-sensors.gcda:Version mismatch - expected 13.3 (release) (B33*) got 11.1 (release) (B11*)
+DewWindow host: 719 assertions passed
+python3 tools/coverage.py
+build-tests/test-sd.gcda:version 'B11*', prefer version 'B33*'
+build-tests/test-sd.gcda:stamp mismatch with notes file
+build-tests/test-dew.gcda:version 'B11*', prefer version 'B33*'
+build-tests/test-dew.gcda:stamp mismatch with notes file
+build-tests/test-sensors.gcda:version 'B11*', prefer version 'B33*'
+build-tests/test-sensors.gcda:stamp mismatch with notes file
+build-tests/test-test_dewwindow.gcda:version 'B11*', prefer version 'B33*'
+build-tests/test-test_dewwindow.gcda:stamp mismatch with notes file
+Traceback (most recent call last):
+  File "/workspace/tools/coverage.py", line 5, in <module>
+    out=subprocess.check_output(cmd+['-b','-c']+[str(p) for p in files],text=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['gcov', '-b', '-c', 'build-tests/test-sd.gcno', 'build-tests/test-dew.gcno', 'build-tests/test-sensors.gcno', 'build-tests/test-test_dewwindow.gcno']' returned non-zero exit status 5.
+make: *** [Makefile:30: coverage] Error 1

@@ -1,0 +1,9 @@
+{
+  "NTC_count": 2979,
+  "first_ms": 271,
+  "last_ms": 744771,
+  "NTC_delta_ms": [
+    250
+  ],
+  "sigrok_startup_equal": true
+}

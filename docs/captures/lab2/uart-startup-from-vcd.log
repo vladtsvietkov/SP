@@ -1,0 +1,34 @@
+DewWindow lab2 STM32C031C6 init=OK SYSCLK=48000000 UART=115200 8N1
+SELF bus=I2C backend=HAL_GPIO_direction stretch_timeout_us=100
+SELF dev=BMP180 id_expected=0x55 status=0
+ANOMALY addr=0x76 result=1 expected=NACK
+SELF dev=DHT22 id=none checksum_pending=1 warmup_ms=2500
+SELF dev=NTC id=none ADC=12bit beta_K=3950 averaging=8
+SELF dev=SD init=1 prior=0 write=1 readback=1 hc=1
+NTC t_ms=271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=1021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=1271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=1271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=1521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=1771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=2021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=2271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=2271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=2521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=2771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+DHT t_ms=2771 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+SELF phase=sampled dht_valid=1 ntc_valid=1 bmp_valid=1
+DEW t_ms=2797 dew_cC=1575 margin_cC=825 w_cgkg=1116 validity=7
+NTC t_ms=3021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=3271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=3271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=3521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=3771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=4021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=4271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=4271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=4521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=4771 raw=2093 surface_cC=2400 valid=1 err=0 count=0

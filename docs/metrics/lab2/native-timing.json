@@ -1,0 +1,95 @@
+{
+  "file": "docs/captures/lab2/sensors-fault-recovery.vcd",
+  "sha256": "bda60606987d3722a858aac4e380e243add8087e432e982898b0deb3f23ed8e3",
+  "timescale": "1ns",
+  "duration_ms": 744761.97285,
+  "D0": {
+    "rising_intervals": {
+      "n": 118697,
+      "min_us": 171.275,
+      "median_us": 254.25,
+      "mean_us": 6270.718182852136,
+      "max_us": 997693.7
+    },
+    "edges": 237395
+  },
+  "scl_active_period": {
+    "n": 115718,
+    "min_us": 171.275,
+    "median_us": 253.0,
+    "mean_us": 239.6109851103545,
+    "max_us": 345.725
+  },
+  "scl_median_Hz": 3952.5691699604745,
+  "D1": {
+    "rising_intervals": {
+      "n": 48559,
+      "min_us": 170.25,
+      "median_us": 585.475,
+      "mean_us": 15328.065325686277,
+      "max_us": 997525.7
+    },
+    "edges": 97119
+  },
+  "D2": {
+    "rising_intervals": {
+      "n": 803209,
+      "min_us": 17.375,
+      "median_us": 26.075,
+      "mean_us": 927.2315811638067,
+      "max_us": 244340.975
+    },
+    "edges": 1606420
+  },
+  "D3": {
+    "rising_intervals": {
+      "n": 12771,
+      "min_us": 76.975,
+      "median_us": 77.0,
+      "mean_us": 58160.70534218151,
+      "max_us": 2781703.375
+    },
+    "edges": 25543
+  },
+  "D4": {
+    "rising_intervals": {
+      "n": 2978,
+      "min_us": 249930.475,
+      "median_us": 249995.05,
+      "mean_us": 249994.77443754196,
+      "max_us": 250038.55
+    },
+    "edges": 5959
+  },
+  "adc_pulse_width": {
+    "n": 2979,
+    "min_us": 573.525,
+    "median_us": 574.15,
+    "mean_us": 574.148757972474,
+    "max_us": 574.15
+  },
+  "D5": {
+    "rising_intervals": {
+      "n": 372,
+      "min_us": 1999824.35,
+      "median_us": 1999958.85,
+      "mean_us": 1999957.9502688171,
+      "max_us": 2000004.35
+    },
+    "edges": 746
+  },
+  "D6": {
+    "rising_intervals": null,
+    "edges": 1
+  },
+  "D7": {
+    "rising_intervals": {
+      "n": 13407,
+      "min_us": 2.65,
+      "median_us": 2.675,
+      "mean_us": 12.677923845752218,
+      "max_us": 203.975
+    },
+    "edges": 26817
+  }
+}

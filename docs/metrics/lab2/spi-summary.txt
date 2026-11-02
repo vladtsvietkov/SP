@@ -1,0 +1,9 @@
+97200.1 98114.725 CMD 0 bytes 9 MOSI 40 00 00 00 00 95 ff ff MISO ff ff ff ff ff ff ff 01
+98219.075 99544.625 CMD 8 bytes 13 MOSI 48 00 00 01 aa 87 ff ff MISO ff ff ff ff ff ff ff 01 00 00 01 aa
+99648.975 100563.425 CMD 55 bytes 9 MOSI 77 00 00 00 00 01 ff ff MISO ff ff ff ff ff ff ff 01
+100667.775 101582.65 CMD 41 bytes 9 MOSI 69 40 00 00 00 01 ff ff MISO ff ff ff ff ff ff ff 00
+101687.0 103004.775 CMD 58 bytes 13 MOSI 7a 00 00 00 00 01 ff ff MISO ff ff ff ff ff ff ff 00 c0 ff 80 00
+103221.225 156743.15 CMD 17 bytes 528 MOSI 51 00 00 08 00 01 ff ff MISO ff ff ff ff ff ff ff 00 ff ff ff ff
+157070.15 212125.6 CMD 24 bytes 544 MOSI 58 00 00 08 00 01 ff ff MISO ff ff ff ff ff ff ff 00 ff ff ff ff
+212407.8 265932.525 CMD 17 bytes 528 MOSI 51 00 00 08 00 01 ff ff MISO ff ff ff ff ff ff ff 00 ff ff ff ff
+SCK period ns 2675 Hz 373831.7757009346

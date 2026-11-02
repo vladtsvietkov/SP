@@ -1,0 +1,148 @@
+{
+  "vcd": "docs/captures/lab2/sensors-fault-recovery.vcd",
+  "sha256": "bda60606987d3722a858aac4e380e243add8087e432e982898b0deb3f23ed8e3",
+  "dht_bytes": [
+    2,
+    88,
+    0,
+    240,
+    74
+  ],
+  "bmp_coefficients": [
+    408,
+    -72,
+    -14383,
+    32741,
+    32757,
+    23153,
+    6190,
+    4,
+    -32768,
+    -8711,
+    2868
+  ],
+  "bmp_ut": 29028,
+  "bmp_up": 33665,
+  "decoded_frames": [
+    {
+      "register": 208,
+      "command": null,
+      "bytes": [
+        85
+      ]
+    },
+    {
+      "register": 170,
+      "command": null,
+      "bytes": [
+        1,
+        152,
+        255,
+        184,
+        199,
+        209,
+        127,
+        229,
+        127,
+        245,
+        90,
+        113,
+        24,
+        46,
+        0,
+        4,
+        128,
+        0,
+        221,
+        249,
+        11,
+        52
+      ]
+    },
+    {
+      "register": 246,
+      "command": 46,
+      "bytes": [
+        113,
+        100
+      ]
+    },
+    {
+      "register": 246,
+      "command": 52,
+      "bytes": [
+        131,
+        129,
+        0
+      ]
+    },
+    {
+      "register": 246,
+      "command": 46,
+      "bytes": [
+        113,
+        100
+      ]
+    },
+    {
+      "register": 246,
+      "command": 52,
+      "bytes": [
+        131,
+        129,
+        0
+      ]
+    },
+    {
+      "register": 246,
+      "command": 46,
+      "bytes": [
+        113,
+        100
+      ]
+    },
+    {
+      "register": 246,
+      "command": 52,
+      "bytes": [
+        131,
+        129,
+        0
+      ]
+    },
+    {
+      "register": 246,
+      "command": 46,
+      "bytes": [
+        113,
+        100
+      ]
+    },
+    {
+      "register": 246,
+      "command": 52,
+      "bytes": [
+        131,
+        129,
+        0
+      ]
+    },
+    {
+      "register": 246,
+      "command": 46,
+      "bytes": [
+        113,
+        100
+      ]
+    },
+    {
+      "register": 246,
+      "command": 52,
+      "bytes": [
+        131,
+        129,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+python3 tools/check_layers.py
+DewWindow layer dependency check: PASS
+mkdir -p build-tests
+rm -f build-tests/*.gcda build-tests/*.gcno
+gcc -std=c11 -Wall -Wextra -Werror --coverage -Ifirmware/Devices -Ifirmware/App firmware/Devices/sensors.c firmware/Devices/sd.c firmware/App/dew.c tests/test_dewwindow.c -lm -o build-tests/test
+./build-tests/test
+DewWindow host: 719 assertions passed
+python3 tools/coverage.py
+File 'firmware/Devices/sd.c'
+Lines executed:97.30% of 37
+Branches executed:90.00% of 60
+Taken at least once:71.67% of 60
+Calls executed:89.29% of 56
+Creating 'sd.c.gcov'
+
+File 'firmware/App/dew.c'
+Lines executed:100.00% of 11
+Branches executed:100.00% of 32
+Taken at least once:87.50% of 32
+No calls
+Creating 'dew.c.gcov'
+
+File 'firmware/Devices/sensors.c'
+Lines executed:100.00% of 52
+Branches executed:100.00% of 64
+Taken at least once:87.50% of 64
+Calls executed:100.00% of 10
+Creating 'sensors.c.gcov'
+
+File 'tests/test_dewwindow.c'
+Lines executed:100.00% of 88
+Branches executed:100.00% of 254
+Taken at least once:66.54% of 254
+Calls executed:50.00% of 130
+Creating 'test_dewwindow.c.gcov'
+
+Lines executed:99.47% of 188
+

@@ -1,0 +1,230 @@
+{
+  "measured_elf_sha256": "19a76b45f77a8d153b7869e900059f516d3c6c081193cac7b3be45f2c6767529",
+  "actual_measurement_date": "2026-11-06",
+  "files": {
+    "docs/captures/lab2/failed-hardware-drive.vcd": {
+      "bytes": 4686600,
+      "sha256": "290f606fb074f59714320feb19390a0f9ae19ec5848ef458f4e1996933158460"
+    },
+    "docs/captures/lab2/spi-startup-named.sr": {
+      "bytes": 19610,
+      "sha256": "edcf8570f8fec195c1baa00110408638ee600e04c16f719252e4103d2a2bbc94"
+    },
+    "docs/captures/lab2/fixture.json": {
+      "bytes": 1982,
+      "sha256": "97088fe63492d68320637948ea98c4afeb1b8199096ea256039dbde5472f8a67"
+    },
+    "docs/captures/lab2/uart-detail.vcd": {
+      "bytes": 1665,
+      "sha256": "4bbc4390ab13a4c26151cba9e3b4ac9560edb9bdccf657d539a6c4fac4acd6d6"
+    },
+    "docs/captures/lab2/adc-detail.vcd": {
+      "bytes": 304,
+      "sha256": "794680811a3906221e3603621545d772b98f21c1d29bf1858b58eb702aede302"
+    },
+    "docs/captures/lab2/spi-detail.sr": {
+      "bytes": 3020,
+      "sha256": "6de2d12d9194b8fa74d9f8387b25c007d5e2c638ac79e4c9fd42fecb3b93f755"
+    },
+    "docs/captures/lab2/i2c-id-named.sr": {
+      "bytes": 1427,
+      "sha256": "24deb9921b22119a8f4c46a0e47bd043e12970b2681a421bfc257b9052998eaf"
+    },
+    "docs/captures/lab2/spi-detail-first2ms.sr": {
+      "bytes": 660,
+      "sha256": "ee536b753320ad845db2f79a53950a904a97655f10b15f744eed8af1d34032a9"
+    },
+    "docs/captures/lab2/spi-reset.vcd": {
+      "bytes": 1349957,
+      "sha256": "b9e5336315513d8d30179027be121f1910c6dc1657d799411ebb0e7ad5345ac7"
+    },
+    "docs/captures/lab2/i2c-startup.txt": {
+      "bytes": 31655,
+      "sha256": "3cf26e91addc6ed4162b1fbdf984b5eb398e88cae4386f100339de7816746c67"
+    },
+    "docs/captures/lab2/uart-detail.txt": {
+      "bytes": 220,
+      "sha256": "175326f54561ea5108b46940f2cc19576622b360ae9f5bcbeaf1d6df1aa1919d"
+    },
+    "docs/captures/lab2/hardware-i2c-failed-final.vcd": {
+      "bytes": 2583274,
+      "sha256": "87d4db70758813ad4a51109d264a13697e6236dc51408f9a9ce1392f7a0e807b"
+    },
+    "docs/captures/lab2/uart-reset-from-vcd.log": {
+      "bytes": 10883,
+      "sha256": "e86e9182b5ae5bddac4a2e33654f9bd820e9554ae6c0b7763967897b3619be30"
+    },
+    "docs/captures/lab2/dht-detail.vcd": {
+      "bytes": 1223,
+      "sha256": "329145cc93ada5f4eb04049521ce922e433054da6d785cffa8977f62ffc394d9"
+    },
+    "docs/captures/lab2/failed-uart-decoded.log": {
+      "bytes": 58603,
+      "sha256": "25d1b0e5dc301fccd091949a973d3e840ccfd2d30d054f6338f6fb2ae7f7e25b"
+    },
+    "docs/captures/lab2/uart-full-from-vcd.decode.json": {
+      "bytes": 635,
+      "sha256": "f6caea21da125229fc6901dd9bf524c0954a14428bc8f125757c085369ef1cf8"
+    },
+    "docs/captures/lab2/sensors-fault-recovery.vcd.timing.json": {
+      "bytes": 1990,
+      "sha256": "c27d76472f9ded7f1df4bdf4bee78155b9d16d9e6023025ea4d36686bc6dbe27"
+    },
+    "docs/captures/lab2/uart-startup.txt": {
+      "bytes": 22275,
+      "sha256": "2ea792f653bb135a2b13df004b9f9a96647ec136f53dca95b3dc150c8b8fb8a7"
+    },
+    "docs/captures/lab2/spi-detail-first2ms.vcd": {
+      "bytes": 4439,
+      "sha256": "0212f7419692008647619a212dd3cc0ba9feeb03b62ac6dd0d3981566aa26206"
+    },
+    "docs/captures/lab2/cold-before-fix.vcd": {
+      "bytes": 2055750,
+      "sha256": "84d323bdf03d04694b25ce1cb4b181eee04a97312fbecee5461d7805be895093"
+    },
+    "docs/captures/lab2/spi-detail-first2ms.txt": {
+      "bytes": 3116,
+      "sha256": "a98cfb90d652302de89e7ce3006476e76733a9e79d630101a38b06963df5802e"
+    },
+    "docs/captures/lab2/diagram-sensors.json": {
+      "bytes": 4080,
+      "sha256": "80475b1791661af5e29909f10fe993844762c211f303bf2e462f6a991bffc13d"
+    },
+    "docs/captures/lab2/uart-full-from-vcd.log": {
+      "bytes": 272588,
+      "sha256": "0b6dd551c952b0bc05bf61e7eae02dc6e307ba52e4b2aaf3a917588911f082c8"
+    },
+    "docs/captures/lab2/spi-detail-first2ms.window.json": {
+      "bytes": 512,
+      "sha256": "b19e506fd14841d28952b05189b26a673cd25fcdc1f49b5e3913c63865821c7b"
+    },
+    "docs/captures/lab2/dht-detail.txt": {
+      "bytes": 916,
+      "sha256": "09d4fc127307d730d31972b7635962eee44f08bfbbd3e5c2405df47874eb6822"
+    },
+    "docs/captures/lab2/uart-reset.txt": {
+      "bytes": 119713,
+      "sha256": "c790e76f5b6822f1b34c90f36a423907d2794ca78cecfe4ae0d7a1a0b12d839d"
+    },
+    "docs/captures/lab2/README.md": {
+      "bytes": 5742,
+      "sha256": "3c3189ab332e24e7d3397f768997ff091cf813c2ada6d5bf9aa998f7a860f372"
+    },
+    "docs/captures/lab2/dht-detail.window.json": {
+      "bytes": 453,
+      "sha256": "de82c49b6b11ab85b61ba303a71b6d6c273b70f809b5da736e317b16c3e12641"
+    },
+    "docs/captures/lab2/uart-detail.sr": {
+      "bytes": 558,
+      "sha256": "ada04523093ba05a9822559961a553c25966bcbbaaadc4dfe783e372a20297a5"
+    },
+    "docs/captures/lab2/startup.sr": {
+      "bytes": 16837,
+      "sha256": "64ae1003c4c469dd54b6757a19a8e42e63a81f3b30048256ae469242d0d68757"
+    },
+    "docs/captures/lab2/spi-detail.window.json": {
+      "bytes": 513,
+      "sha256": "ccd1ae925fa1d0ee1f9abd59a4ad2457acbb025d8c6fbb0c81e669a449cc517d"
+    },
+    "docs/captures/lab2/dht-detail.sr": {
+      "bytes": 478,
+      "sha256": "d69a865fc52473e30f17c1cc073f1ba3b8c1d358218d1a09fb5279d22580753f"
+    },
+    "docs/captures/lab2/adc-detail.sr": {
+      "bytes": 1419,
+      "sha256": "e2289d79f3ca17dc8be6b7a4df4c74aa5fcdecc4993e459b5c2fd240d1a24ffc"
+    },
+    "docs/captures/lab2/spi-startup-500ms.vcd": {
+      "bytes": 514201,
+      "sha256": "48fe765e0ea1c1883312a40730f132a7a57a0c497186269975690b05d2b59df5"
+    },
+    "docs/captures/lab2/sensors-fault-recovery.vcd": {
+      "bytes": 33619219,
+      "sha256": "bda60606987d3722a858aac4e380e243add8087e432e982898b0deb3f23ed8e3"
+    },
+    "docs/captures/lab2/startup-5s.vcd": {
+      "bytes": 594840,
+      "sha256": "5f671f58c5986032bdc741ce72c355e34ec87e6cf4cf354ec3630598ad7e26e3"
+    },
+    "docs/captures/lab2/i2c-id.sr": {
+      "bytes": 1113,
+      "sha256": "9e7b218a04a25fcf25b3e245084dc1c8a41c994cd447d5c2f96c0de069d11d59"
+    },
+    "docs/captures/lab2/spi-startup-500ms.vcd.spi.json": {
+      "bytes": 82507,
+      "sha256": "f88364fad0db2863f0f26b6d1a025a143e29ff5790e998dbdf67c8d235a9f533"
+    },
+    "docs/captures/lab2/spi-write-read.vcd": {
+      "bytes": 4941840,
+      "sha256": "6847fa42ef534f274e3f957bd12cfbd61d581a58a34dd547fb686a42086bbd8e"
+    },
+    "docs/captures/lab2/failed-mem-read.vcd": {
+      "bytes": 5726014,
+      "sha256": "05fac91e7d34708fd9bb312264299c055e2972d19766546d47528acd2bbdc30a"
+    },
+    "docs/captures/lab2/diagram-spi.json": {
+      "bytes": 4082,
+      "sha256": "26ddb721a95372258c2855d9f25090052199d5288a0840cbc8056553577cdcab"
+    },
+    "docs/captures/lab2/failed-uart-decoded.txt": {
+      "bytes": 644633,
+      "sha256": "09fd7d993fe3f36477c6c81fa1cd7566cd1caabfd5f24c0847e6662da5d09b3d"
+    },
+    "docs/captures/lab2/uart-detail.window.json": {
+      "bytes": 449,
+      "sha256": "3b1989b8f79809e52792146b0d4489a5836e07047bea72cba0f652f0b8083ca1"
+    },
+    "docs/captures/lab2/failed-i2c-decoded.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/captures/lab2/uart-startup-from-vcd.log": {
+      "bytes": 2025,
+      "sha256": "afc3303f658e48ff4fe5a2eade985394fd1fd339cf20b3ed2ab786b48dbccc6c"
+    },
+    "docs/captures/lab2/dht-startup.txt": {
+      "bytes": 1732,
+      "sha256": "d791c72a9d195480abac6a06ac00b2ae5e367b9a115a2b4c58cc825b11357d7e"
+    },
+    "docs/captures/lab2/cold-partial-i2c.txt": {
+      "bytes": 239,
+      "sha256": "450762319b36aac97f038cda05eddcd87027d33f7f097658ceab02e723701949"
+    },
+    "docs/captures/lab2/spi-startup.txt": {
+      "bytes": 756532,
+      "sha256": "1493c038b6b27cb0ca78defb3ab13601791ad58e444f07a43eb843c6099911af"
+    },
+    "docs/captures/lab2/i2c-fault.txt": {
+      "bytes": 566467,
+      "sha256": "cb70b081a8472ae8e1ce8dac27e7d99333386768c6b0e9afd4b1feb5edc5ac04"
+    },
+    "docs/captures/lab2/spi-detail.vcd": {
+      "bytes": 163088,
+      "sha256": "5de9b43dffc70165e753b65dbd7e395e64ffe13374cde4d676cc9cf38a4e82e6"
+    },
+    "docs/captures/lab2/spi-bytes.txt": {
+      "bytes": 756532,
+      "sha256": "1493c038b6b27cb0ca78defb3ab13601791ad58e444f07a43eb843c6099911af"
+    },
+    "docs/captures/lab2/fault-first-105s.vcd": {
+      "bytes": 4779620,
+      "sha256": "960f0f9c6fe5ed28ec5e7baad4a8d7cc77acb23bccd9648ac0d776c0d7ce9d1b"
+    },
+    "docs/captures/lab2/i2c-id-35ms.vcd": {
+      "bytes": 13347,
+      "sha256": "10d37ce529f349ccb4e9765fe54d777401be163d53d4f93e3f922b312e369af6"
+    },
+    "docs/captures/lab2/manual-i2c.json": {
+      "bytes": 1182,
+      "sha256": "d54f97b9e959a709ac903b47d7cd3cb84ff85c24a089c849c0b24e40ceedb926"
+    },
+    "docs/captures/lab2/spi-startup.sr": {
+      "bytes": 12940,
+      "sha256": "96f7d5e6867057b9c900a1be670ccf3dcf35bed3c527fca2fe7c2c74ada4585f"
+    },
+    "docs/captures/lab2/adc-detail.window.json": {
+      "bytes": 455,
+      "sha256": "4f4ffa1464b7bd660454abe4034135e9e893bc6d857cb6553d895e974604e8d1"
+    }
+  }
+}

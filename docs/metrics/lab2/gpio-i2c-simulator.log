@@ -1,0 +1,50 @@
+SELF dev=SD init=1 prior=1 write=1 readback=1 hc=1
+NTC t_ms=102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=102 T_dC=0 p_Pa=0 valid=0 err=2 count=1
+NTC t_ms=352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=1102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=1102 T_dC=0 p_Pa=0 valid=0 err=2 count=2
+NTC t_ms=1352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=1602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=1852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=2102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=2102 T_dC=0 p_Pa=0 valid=0 err=2 count=3
+NTC t_ms=2352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=2602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+DHT t_ms=2602 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+SELF phase=sampled dht_valid=1 ntc_valid=1 bmp_valid=0
+DEGRADED t_ms=2628 validity=3 formula_valid=0
+NTC t_ms=2852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=3102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=3102 T_dC=0 p_Pa=0 valid=0 err=2 count=4
+NTC t_ms=3352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=3602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=3852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=4102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=4102 T_dC=0 p_Pa=0 valid=0 err=2 count=5
+NTC t_ms=4352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=4602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=4852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=5102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=5102 T_dC=0 p_Pa=0 valid=0 err=2 count=6
+DHT t_ms=5102 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+DEGRADED t_ms=5128 validity=3 formula_valid=0
+NTC t_ms=5352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=5602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=5852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=6102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=6102 T_dC=0 p_Pa=0 valid=0 err=2 count=7
+NTC t_ms=6352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=6602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=6852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=7102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=7102 T_dC=0 p_Pa=0 valid=0 err=2 count=8
+NTC t_ms=7352 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=7602 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+DHT t_ms=7602 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+DEGRADED t_ms=7622 validity=3 formula_valid=0
+NTC t_ms=7852 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=8102 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=8102 T_dC=0 p_Pa=0 valid=0 err=2 count=9

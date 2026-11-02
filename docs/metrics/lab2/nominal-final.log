@@ -1,0 +1,35 @@
+NTC t_ms=11521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=11771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=12021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=12271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=12271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=12521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=12771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+DHT t_ms=12771 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+DEW t_ms=12791 dew_cC=1575 margin_cC=825 w_cgkg=1116 validity=7
+NTC t_ms=13021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=13271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=13271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=13521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=13771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=14021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=14271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=14271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=14521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=14771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=15021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=15271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=15271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+DHT t_ms=15271 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+DEW t_ms=15349 dew_cC=1575 margin_cC=825 w_cgkg=1116 validity=7
+NTC t_ms=15521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=15771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=16021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=16271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=16271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=16521 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=16771 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=17021 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=17271 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=17271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0
+NTC t_ms=17521 raw=2093 surface_cC=2400 valid=1 err=0 count=0

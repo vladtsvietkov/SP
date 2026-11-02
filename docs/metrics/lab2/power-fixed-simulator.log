@@ -1,0 +1,35 @@
+NTC t_ms=11392 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=11642 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=11892 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=12142 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=12142 T_dC=0 p_Pa=0 valid=0 err=2 count=13
+NTC t_ms=12392 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=12642 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+DHT t_ms=12642 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+DEGRADED t_ms=12662 validity=3 formula_valid=0
+NTC t_ms=12892 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=13142 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=13142 T_dC=0 p_Pa=0 valid=0 err=2 count=14
+NTC t_ms=13392 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=13642 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=13892 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=14142 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=14142 T_dC=0 p_Pa=0 valid=0 err=2 count=15
+NTC t_ms=14392 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=14642 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=14892 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=15142 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=15142 T_dC=0 p_Pa=0 valid=0 err=2 count=16
+DHT t_ms=15142 T_dC=240 RH_dPct=600 valid=1 err=0 count=0
+DEGRADED t_ms=15193 validity=3 formula_valid=0
+NTC t_ms=15392 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=15642 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=15892 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=16142 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=16142 T_dC=0 p_Pa=0 valid=0 err=2 count=17
+NTC t_ms=16392 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=16642 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=16892 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+NTC t_ms=17142 raw=2093 surface_cC=2400 valid=1 err=0 count=0
+BMP t_ms=17142 T_dC=0 p_Pa=0 valid=0 err=2 count=18
+NTC t_ms=17392 raw=2093 surface_cC=2400 valid=1 err=0 count=0

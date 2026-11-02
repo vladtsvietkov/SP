@@ -1,0 +1,82 @@
+{
+  "method": "Read SDA levels at native SCL rising edges; no protocol decoder used in this raw sampling step",
+  "start_us": 16410,
+  "address_wire_bits": [
+    {
+      "t_us": 16663.825,
+      "SDA": 1
+    },
+    {
+      "t_us": 16920.45,
+      "SDA": 1
+    },
+    {
+      "t_us": 17174.7,
+      "SDA": 1
+    },
+    {
+      "t_us": 17430.95,
+      "SDA": 0
+    },
+    {
+      "t_us": 17685.2,
+      "SDA": 1
+    },
+    {
+      "t_us": 17940.675,
+      "SDA": 1
+    },
+    {
+      "t_us": 18193.675,
+      "SDA": 1
+    },
+    {
+      "t_us": 18449.925,
+      "SDA": 0
+    },
+    {
+      "t_us": 18704.175,
+      "SDA": 0
+    }
+  ],
+  "address_wire_hex": "0xee",
+  "register_bits": [
+    {
+      "t_us": 18962.65,
+      "SDA": 1
+    },
+    {
+      "t_us": 19215.65,
+      "SDA": 1
+    },
+    {
+      "t_us": 19471.9,
+      "SDA": 0
+    },
+    {
+      "t_us": 19726.15,
+      "SDA": 1
+    },
+    {
+      "t_us": 19984.9,
+      "SDA": 0
+    },
+    {
+      "t_us": 20241.15,
+      "SDA": 0
+    },
+    {
+      "t_us": 20496.15,
+      "SDA": 0
+    },
+    {
+      "t_us": 20751.15,
+      "SDA": 0
+    },
+    {
+      "t_us": 21006.625,
+      "SDA": 0
+    }
+  ],
+  "register_hex": "0xd0"
+}

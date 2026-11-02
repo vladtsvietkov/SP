@@ -1,0 +1,16 @@
+[
+  {
+    "text": "DIAG command=nack applied=1",
+    "first_start_ms": 96338.21215,
+    "last_stop_ms": 96340.91390555556,
+    "next_i2c_start_ms": 97278.946,
+    "from_UART_end_to_START_ms": 938.0320944444393
+  },
+  {
+    "text": "DIAG command=recover applied=1",
+    "first_start_ms": 98296.854675,
+    "last_stop_ms": 98299.83918055556,
+    "next_i2c_start_ms": 99278.879,
+    "from_UART_end_to_START_ms": 979.0398194444424
+  }
+]

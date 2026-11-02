@@ -1,0 +1,21 @@
+{
+  "source": "docs/captures/lab2/sensors-fault-recovery.vcd",
+  "source_sha256": "bda60606987d3722a858aac4e380e243add8087e432e982898b0deb3f23ed8e3",
+  "baud": 115200,
+  "bytes": 272588,
+  "bad_stop_bits": 0,
+  "partial_final_frame_excluded": true,
+  "method": "RX values at native bit centers; inspect capture mapping for symbol",
+  "diagnostic_lines": [
+    {
+      "text": "DIAG command=nack applied=1",
+      "first_start_ms": 96338.21215,
+      "last_stop_ms": 96340.91390555556
+    },
+    {
+      "text": "DIAG command=recover applied=1",
+      "first_start_ms": 98296.854675,
+      "last_stop_ms": 98299.83918055556
+    }
+  ]
+}

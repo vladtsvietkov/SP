@@ -1,0 +1,21 @@
+{
+  "steps": [
+    {
+      "actual_utc": "2026-11-06T16:39:49.502958+00:00",
+      "after_mcu_line": "BMP t_ms=96271 T_dC=240 p_Pa=101327 valid=1 err=0 count=0",
+      "tx": "nack"
+    },
+    {
+      "actual_utc": "2026-11-06T16:39:51.461135+00:00",
+      "after_mcu_line": "BMP t_ms=98271 T_dC=240 p_Pa=101327 valid=0 err=1 count=2",
+      "tx": "recover"
+    },
+    {
+      "actual_utc": "2026-11-06T16:39:53.501759+00:00",
+      "after_mcu_line": "BMP t_ms=100271 T_dC=240 p_Pa=101327 valid=1 err=0 count=2",
+      "tx": "probe"
+    }
+  ],
+  "completed": true,
+  "elf_sha256": "19a76b45f77a8d153b7869e900059f516d3c6c081193cac7b3be45f2c6767529"
+}

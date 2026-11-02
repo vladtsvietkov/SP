@@ -1,0 +1,50 @@
+python3 tools/check_layers.py
+DewWindow layer dependency check: PASS
+mkdir -p build-tests
+cc -std=c11 -Wall -Wextra -Werror --coverage -Ifirmware/Devices -Ifirmware/App firmware/Devices/sensors.c firmware/Devices/sd.c firmware/App/dew.c tests/test_dewwindow.c -lm -o build-tests/test
+./build-tests/test
+DewWindow host: 719 assertions passed
+python3 tools/coverage.py
+File 'firmware/Devices/sd.c'
+Lines executed:97.62% of 42
+Branches executed:100.00% of 56
+Taken at least once:71.43% of 56
+No calls
+Creating 'sd.c.gcov'
+
+File 'firmware/App/dew.c'
+Lines executed:100.00% of 12
+Branches executed:100.00% of 46
+Taken at least once:65.22% of 46
+No calls
+Creating 'dew.c.gcov'
+
+File '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h'
+Lines executed:33.33% of 6
+Branches executed:33.33% of 6
+Taken at least once:33.33% of 6
+No calls
+Creating 'math.h.gcov'
+
+File 'firmware/Devices/sensors.c'
+Lines executed:100.00% of 57
+Branches executed:100.00% of 66
+Taken at least once:84.85% of 66
+No calls
+Creating 'sensors.c.gcov'
+
+File '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h'
+Lines executed:33.33% of 6
+Branches executed:33.33% of 6
+Taken at least once:16.67% of 6
+No calls
+Creating 'math.h.gcov'
+
+File 'tests/test_dewwindow.c'
+Lines executed:100.00% of 91
+Branches executed:100.00% of 246
+Taken at least once:65.45% of 246
+No calls
+Creating 'test_dewwindow.c.gcov'
+
+

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "firmware/Devices/sd.c",
+    "line_pct": 97.3,
+    "lines": 37
+  },
+  {
+    "file": "firmware/App/dew.c",
+    "line_pct": 100.0,
+    "lines": 11
+  },
+  {
+    "file": "firmware/Devices/sensors.c",
+    "line_pct": 100.0,
+    "lines": 52
+  }
+]

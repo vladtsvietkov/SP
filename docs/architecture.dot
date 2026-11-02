@@ -1,0 +1,13 @@
+digraph DewWindow {
+  graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45"];
+  node [shape=box, fontname="Arial", fontsize=16, style="rounded,filled", fillcolor="#edf3f7", margin="0.18,0.12"];
+  edge [fontname="Arial", fontsize=12];
+  core [label="Core / ST HAL / CMSIS\nstartup, IRQ, main"];
+  platform [label="Platform\nboard pins, GPIO I2C, DHT timing, ADC, SPI"];
+  devices [label="Devices\nBMP180, DHT, NTC, SD protocols"];
+  app [label="App\nMagnus, mixing ratio, freshness"];
+  bus [label="Callback contracts\nread / write / byte / cs / ms"];
+  tests [label="Host tests\nfake bus + captured vectors", fillcolor="#f9f1dc"];
+  core -> platform; platform -> devices; platform -> app;
+  devices -> bus; tests -> devices; tests -> app;
+}

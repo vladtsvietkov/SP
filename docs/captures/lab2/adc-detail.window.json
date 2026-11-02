@@ -1,0 +1,11 @@
+{
+  "source": "docs/captures/lab2/startup-5s.vcd",
+  "source_sha256": "5f671f58c5986032bdc741ce72c355e34ec87e6cf4cf354ec3630598ad7e26e3",
+  "output_sha256": "794680811a3906221e3603621545d772b98f21c1d29bf1858b58eb702aede302",
+  "origin_ms": 200.0,
+  "duration_ms": 1000.0,
+  "mapping": {
+    "D4": "ADC"
+  },
+  "method": "Native scalar edge window; timestamps rebased by origin_ms, initial levels from preceding source events. No synthetic transitions."
+}

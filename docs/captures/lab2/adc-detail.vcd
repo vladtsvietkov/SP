@@ -1,0 +1,25 @@
+$version Analysis window; original edges unchanged, see JSON origin $end
+$timescale 1ns $end
+$scope module logic $end
+$var wire 1 A ADC $end
+$upscope $end
+$enddefinitions $end
+#0
+0A
+#71950700
+1A
+#72524225
+0A
+#321881175
+1A
+#322455325
+0A
+#571869225
+1A
+#572443375
+0A
+#821863775
+1A
+#822437925
+0A
+#1000000000
